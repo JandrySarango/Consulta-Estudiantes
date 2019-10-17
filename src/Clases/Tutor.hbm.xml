@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 23/06/2019 11:57:20 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="Clases.Tutor" table="tutor" schema="public" optimistic-lock="version">
+        <id name="codigo" type="int">
+            <column name="codigo" />
+            <generator class="assigned" />
+        </id>
+        <property name="nombre" type="string">
+            <column name="nombre" />
+        </property>
+        <property name="email" type="string">
+            <column name="email" />
+        </property>
+        <property name="estado" type="string">
+            <column name="estado" />
+        </property>
+    </class>
+</hibernate-mapping>
